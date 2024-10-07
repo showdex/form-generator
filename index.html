@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="heading">Tag Form</h1>
+    <div class="container">
+      <form id="tagForm">
+        <section>
+          <label for="tag">Select Tag:</label>
+          <select id="tag" name="tag">
+            <option value>--Select Tag--</option>
+            <option value="h1">H1</option>
+            <option value="h2">H2</option>
+            <option value="h3">H3</option>
+            <option value="p">Paragraph</option>
+            <option value="span">Span</option>
+            <option value="section">Section</option>
+            <option value="blockquote">Blockquote</option>
+            <option value="input">Input</option>
+            <option value="form">Form</option>
+            <option value="ul">Unordered List</option>
+            <option value="ol">Ordered List</option>
+            <option value="li">List Item</option>
+            <option value="audio">Audio</option>
+            <option value="video">Video</option>
+            <option value="img">Image</option>
+            <option value="table">Table</option>
+            <option value="iframe">Iframe</option>
+            <option value="button">Button</option>
+            <option value="a">Anchor</option>
+          </select>
+        </section>
+        <section id="textContentSection" style="display: none">
+          <label for="text">Text Content:</label>
+          <input type="text" id="text" name="text" placeholder="Content" />
+        </section>
+        <section id="fontSection" style="display: none">
+          <label for="fontFamily">Font Family:</label>
+          <select id="fontFamily" name="fontFamily">
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="'Times New Roman', serif">Times New Roman</option>
+            <option value="Verdana, sans-serif">Verdana</option>
+            <option value="'Courier New', monospace">Courier New</option>
+            <option value="Georgia, serif">Georgia</option>
+          </select>
+        </section>
+        <section id="textAlignSection" style="display: none">
+          <label for="textAlignOrPosition">Text Align:</label>
+          <select id="textAlignOrPosition" name="textAlignOrPosition">
+            <option value="center">Center</option>
+            <option value="end">End</option>
+            <option value="justify">Justify</option>
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+            <option value="start">Start</option>
+          </select>
+        </section>
+        <section id="backgroundColorContainer" style="display: none">
+          <label for="bgColor">Background Color:</label>
+          <input type="color" id="bgColor" />
+        </section>
+        <section id="colorSection" style="display: none">
+          <label for="color">Text Color:</label>
+          <input type="color" id="color" name="color" value="#000000" />
+        </section>
+        <section id="additionalFields">
+          <div id="srcContainer" style="display: none">
+            <label for="src">Source URL:</label>
+            <input type="text" id="src" name="src" placeholder="URL" />
+          </div>
+          <div id="altContainer" style="display: none">
+            <label for="alt">Alt Text:</label>
+            <input type="text" id="alt" name="alt" placeholder="Alt text" />
+          </div>
+          <div id="widthContainer" style="display: none">
+            <label for="width">Width:</label>
+            <input
+              type="text"
+              id="width"
+              name="width"
+              placeholder="Width (e.g., 100px)" />
+          </div>
+          <div id="heightContainer" style="display: none">
+            <label for="height">Height:</label>
+            <input
+              type="text"
+              id="height"
+              name="height"
+              placeholder="Height (e.g., 100px)" />
+          </div>
+          <div id="hrefContainer" style="display: none">
+            <label for="href">Link URL:</label>
+            <input type="text" id="href" name="href" placeholder="URL" />
+          </div>
+          <div id="idContainer" style="display: none">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" placeholder="Element ID" />
+          </div>
+          <div id="classContainer" style="display: none">
+            <label for="class">Class:</label>
+            <input
+              type="text"
+              id="class"
+              name="class"
+              placeholder="Element Class" />
+          </div>
+          <div id="titleContainer" style="display: none">
+            <label for="title">Title:</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Element Title" />
+          </div>
+          <div id="valueContainer" style="display: none">
+            <label for="value">Value:</label>
+            <input
+              type="text"
+              id="value"
+              name="value"
+              placeholder="Element Value" />
+          </div>
+          <div id="rowsContainer" style="display: none">
+            <label for="rows">Rows:</label>
+            <input
+              type="text"
+              id="rows"
+              name="rows"
+              placeholder="Number of rows" />
+          </div>
+          <div id="colsContainer" style="display: none">
+            <label for="cols">Cols:</label>
+            <input
+              type="text"
+              id="cols"
+              name="cols"
+              placeholder="Number of columns" />
+          </div>
+        </section>
+        <button type="submit" class="submit">Submit</button>
+      </form>
+      <section id="output"></section>
+    </div>
+    <script type="module" src="script.js"></script>
+    <!-- <script type="module" src="domUtils.js"></script>
+    <script type="module" src="formUtils.js"></script> -->
+  </body>
+  </html>

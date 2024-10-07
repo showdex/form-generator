@@ -1,0 +1,186 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    background-image: url('sky.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#heading {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: #5a60a8;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+form {
+    flex: 0.4;
+    margin-right: 20px;
+}
+
+section {
+    margin-bottom: 5px;
+}
+
+label {
+    margin-bottom: 3px;
+    color: #aaadd3;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    /* Increased margin for consistency */
+}
+
+.submit {
+    padding: 10px;
+    background-color: rgb(0, 160, 0);
+    color: rgb(40, 18, 161);
+    border: navy;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #45a049;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(150, 145, 170);
+    border: navy;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0c0c0;
+    /* Added hover effect */
+}
+
+.attribute {
+    display: none;
+    /* Hide all attributes initially */
+}
+
+#output {
+    flex: 0.7;
+    margin-left: 20px;
+    padding: 15px;
+    border: 1px solid #0e1bcc;
+    border-radius: 10px;
+    background-color: #ffffffcc;
+    min-height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+#output h1,
+#output h2,
+#output h3,
+#output p,
+#output span,
+#output section {
+    margin: 0;
+}
+
+#output input {
+    width: auto;
+    display: flex;
+}
+
+#output input,
+#output table,
+#output img,
+#output video {
+    margin: 10px 0;
+    max-width: 100%;
+    display: block;
+}
+
+.edit-button,
+.delete-button {
+    position: absolute;
+    display: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    top: 10px;
+    right: 70px;
+}
+
+.delete-button {
+    top: 10px;
+    right: 10px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #e0e0e0;
+    /* Added hover effect */
+}
+
+code {
+    font-family: Consolas, "courier new";
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+}
+
+/* styles.css */
+.wrapDiv {
+    border: 1px solid transparent;
+    padding: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.wrapDiv.clicked {
+    border: 1px solid blue;
+    /* Visible border when clicked */
+}
+
+.edit-button,
+.delete-button {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    top: 5px;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.wrapDiv.clicked .edit-button,
+.wrapDiv.clicked .delete-button {
+    display: inline-block;
+    /* Show buttons when parent has 'clicked' class */
+}
+
+.edit-button {
+    right: 75px;
+    /* Adjust positioning for the edit button */
+}
+
+.delete-button {
+    right: 10px;
+    /* Adjust positioning for the delete button */
+}
